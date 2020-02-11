@@ -14,13 +14,23 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/tvScreenName"
+        android:id="@+id/tvUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@id/ivProfileImage"
-        tools:text="_penjie_" />
+        android:textStyle="bold"
+        tools:text="Freddie Triplett" />
+
+    <TextView
+        android:id="@+id/tvScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/tvUsername"
+        tools:text="_penjie_ · " />
 
     <TextView
         android:id="@+id/tvBody"
@@ -31,4 +41,11 @@
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@id/ivProfileImage"
         tools:text="I don't tweet but it's a free plug so follow me." />
+
+    <TextView
+        android:id="@+id/tvTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tvScreenName"
+        tools:text="2m" />
 </RelativeLayout>
